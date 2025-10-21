@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch Users Example</title>
+    <style>
+      * {
+        font-family: Arial, sans-serif;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        text-align: center;
+      }
+      .user-card {
+        display: inline-block;
+        border: 1px solid #ddd;
+        width: 150px;
+        border-radius: 8px;
+        padding: 10px;
+        margin: 8px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      button {
+        padding: 8px 16px;
+        background: #007bff;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Load Users</h1>
+    <button id="loadBtn">Fetch Users</button>
+
+    <div id="users" style="margin-top: 20px"></div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

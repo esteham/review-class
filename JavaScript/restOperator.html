@@ -1,0 +1,38 @@
+<script>
+  //restOperator
+  function sum(...nums) {
+    return nums.reduce((a, b) => a + b);
+  }
+
+  console.log(sum(1, 2, 3, 4, 6));
+
+  //Object Destructuring
+  const person = { name: "Xihad", age: 25 };
+  const { name, age } = person;
+  document.write(name, age);
+
+  document.write("<br/>");
+
+  //Array Destructuring
+  const numbers = [15, 12, 14];
+  const [a, b, c] = numbers;
+  document.write(a, b, c);
+  console.log(a, b, c);
+
+  //Access Modifiers
+  class MyClass {
+    constructor(name, age) {
+      this.name = name;
+      this.age = age;
+    }
+
+    hello() {
+      console.log(`Hello, I'm ${this.name} and my age is ${this.age}`);
+    }
+  }
+
+  const m1 = new MyClass("Spider", 26);
+  m1.hello();
+
+  
+</script>

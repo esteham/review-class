@@ -1,0 +1,24 @@
+<script type="text/javascript">
+  const users = [
+    { id: 1001, name: "Xihad", emial: "xihad@gamil.com" },
+    { id: 1002, name: "Spider", emial: "spider@gamil.com" },
+    { id: 1003, name: "Monkey", emial: "monkey@gamil.com" },
+  ];
+
+  const names = users.map(({ id, name }) => ({ id, label: name }));
+  console.log(names);
+</script>
+
+<ul id="user-list"></ul>
+
+<script type="text/javascript">
+  const students = [
+    { id: 1001, name: "Xihad" },
+    { id: 1002, name: "Spider" },
+    { id: 1003, name: "Monkey" },
+  ];
+  const lis = students
+    .map((s) => `<li data-key="${s.id}">${s.name}</li>`)
+    .join(" ");
+  document.getElementById("user-list").innerHTML = lis;
+</script>
